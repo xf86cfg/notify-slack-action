@@ -63,11 +63,11 @@ def notify_slack(job_status, notify_when):
         'attachments': [
             {
                 'text': message,
-                'fallback': 'New Github Action Run',
-                'pretext': 'New Github Action Run',
+                'fallback': 'ObjectUndefined CI/CD',
+                'pretext': 'ObjectUndefined CI/CD',
                 'color': color,
                 'mrkdwn_in': ['text'],
-                'footer': 'Developed by <https://www.ravsam.in|RavSam>',
+                'footer': '',
             }
         ]
     }
