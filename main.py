@@ -62,9 +62,10 @@ def notify_slack(job_status, notify_when):
     payload = {
         'attachments': [
             {
+                'author_name': 'ObjectUndefined CI/CD'
                 'text': message,
-                'fallback': 'ObjectUndefined CI/CD',
-                'pretext': 'ObjectUndefined CI/CD',
+                'fallback': 'Github Action',
+                'pretext': 'Github Action',
                 'color': color,
                 'mrkdwn_in': ['text'],
                 'footer': '',
